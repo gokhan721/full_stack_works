@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <!-- Forms -->
+  <div class="form1">
+    <form class="fromDeneme">
+      <input type="email" name="useremail" value="Email Here">
+      <input type="password" name="userpassword" value="">
+      <input type="submit" name="Submit" value="Submission">
+    </form>
+  </div>
+
+  <div class="inputColor">
+    <h1>Choose Color!</h1>
+    <h2>Click On Button!!</h2>
+    <input type="color" name="" value="">
+  </div>
+
+  <div class="inputText">
+    <h2>enter some text</h2>
+    <input type="text" name="" value="Enter text here">
+  </div>
+
+  <!-- action = take me to other web app along with input and interpret on backend -->
+  <!-- method = post or get -->
+  <form action="https://www.facebook.com" method="get">
+    <p>Enter Text and take me to FB</p>
+    <!-- name refers to entered input type in url after submit -->
+    <input type="text" name="usertex" value="">
+    <input type="submit" name="userinput" value="Submit">
+  </form>
+  <br>
+  <form>
+    <p>Form with Label Without for:</p>
+    <label>
+      Enter Text:
+      <input type="text" name="" value="">
+    </label>
+  </form>
+  <br>
+  <form>
+    <p>form with label and for</p>
+    <label for="userinput">Enter Input:</label>
+    <input id="userinput" type="text" name="" placeholder="Enter Text Here!!">
+  </form>
+  <br>
+  <!-- Form with required -->
+  <form>
+    <input type="text" name="" placeholder="not required">
+    <input type="text" name="" placeholder="required" required>
+    <input type="submit" name="" value="Submit">
+  </form>
+
+  <!-- From Selection (Radio Button, Drop-Down Menus, Text Area Inputs) -->
+  <h1>Hotel Feedback Form</h1>
+
+  <form method="get">
+    <h3>Are you from inside the TR, outside?</h3>
+    <!-- Given same name two radio button has been linked -->
+    <label for="intr">Inside:</label>
+    <input id="intr" type="radio" name="loc" value="Inside">
+
+    <label for="outtr">Outside:</label>
+    <input id="outtr" type="radio" name="loc" value="Outside">
+
+    <!-- Drop-down -->
+    <h2>How was your service?</h2>
+    <select name="stars">
+      <option value="Great">3</option>
+      <option value="Okay">2</option>
+      <option value="Bad">1</option>
+    </select>
+
+    <h2>Any other feedback?</h2>
+
+    <textarea name="mytext" rows="8" cols="80"></textarea>
+    <br>
+    <input type="submit" name="" value="SUBMIT">
+
+  </form>
+
+</body>
+
+</html>
