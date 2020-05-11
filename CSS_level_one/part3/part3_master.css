@@ -1,0 +1,34 @@
+/* CSS Selectors */
+/* Classes start with '.class' */
+.firstDiv {
+  color: red;
+}
+
+.secondDiv {
+  color: purple;
+}
+
+/* ids start with hashtag */
+#singleout {
+  color: green;
+  text-decoration: underline;
+}
+
+/* '*' used to cover all the element */
+/* *{
+  color: black;
+} */
+h3+ul {
+  border: 4px dotted purple;
+}
+
+/* All anchor tag inside list */
+li a {
+  color: red;
+}
+
+/* Attributes */
+li a[href="https://www.youtube.com"] {
+  color: blue;
+  border: 5px solid orange;
+}

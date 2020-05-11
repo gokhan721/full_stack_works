@@ -1,0 +1,26 @@
+/* commentsss in CSS */
+
+/* Basic format for css file
+selected tag{
+   property: value;
+} */
+
+
+h1{
+  color: blue;
+}
+
+
+li{
+    color: rgb(33, 14, 8);
+}
+
+p{
+    color: #0895a8;
+}
+
+
+h4{
+  /* a stands for alpha */
+  color: rgba(255, 97, 0, 1);
+}

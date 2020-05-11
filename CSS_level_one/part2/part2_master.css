@@ -1,0 +1,23 @@
+body{
+  background: url(https://wallpaperaccess.com/full/141254.jpg);
+  background-clip: border-box;
+  background-blend-mode: color-burn;
+  background-attachment: scroll;
+}
+
+div{
+  background: blue;
+  border-color: orange;
+  border-width: 5px;
+  border-style: solid;
+}
+
+p{
+  color: darkred;
+}
+
+
+span{
+  background: white;
+  color: black;
+}
