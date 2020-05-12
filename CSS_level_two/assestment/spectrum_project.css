@@ -1,0 +1,34 @@
+h1 {
+  font-family: "Pangolin", cursive;
+  text-align: center;
+}
+
+.colors {
+  margin: auto;
+  border-spacing: 15px;
+}
+/* In the solution used border with 6px solid white*/
+td{
+    width: 200px;
+    height: 400px;
+}
+
+#boardone {
+  background: #114B5F;
+}
+
+#boardtwo {
+  background: #028090;
+}
+
+#boardthree {
+  background: #E4FDE1;
+}
+
+#boardfour {
+  background: #456990;
+}
+
+#boardfive {
+  background: #F45B69;
+}

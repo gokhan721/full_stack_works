@@ -1,0 +1,24 @@
+/* Fonts can be cahnged along OS
+  Links have been provided in lecture note at part1_font.css
+*/
+h1 {
+  font-family: 'Barrio', cursive;
+  text-align: center;
+}
+
+/* 1 em = 16px
+  Use em for font base on value indicate in body
+*/
+p {
+  font-family: monospace;
+  font-style: italic;
+  font-weight: bold;
+}
+
+body {
+  font-size: 20px;
+}
+
+#two{
+  font-size: 1.0em;
+}
