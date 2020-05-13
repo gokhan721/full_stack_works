@@ -1,0 +1,18 @@
+What is a framework?
+  - Inversion of Control
+  - Default Behavior
+  - Extensibility
+  - Non-modifiable Framework Code
+
+
+Bootstarp v3-v4 differences:
+  - Panels are beign replaced by cards
+  - larger default font sizes
+  - new grid tier(XL)
+  - Use pf flexbox
+  - Moved from Less to Sass
+
+
+CDN: Content delivery network
+
+Note1: Can be downloaded Bootstrap to working on it locally.
