@@ -1,0 +1,13 @@
+Important document attributes:
+  - document.URL
+  - document.body
+  - document.head
+  - document.links
+
+
+Methods for grabbing elements:
+  - document.getElementById()
+  - document.getElementByClassName()
+  - document.getElementByTagName()
+  - document.querySelector() \\ # for id . for class CSS. returns first match
+  - document.querySelectorAll() \\ return all match
