@@ -1,0 +1,15 @@
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  border: 5px solid black;
+  background: gray;
+  display: table-cell;
+  padding: 2px;
+}
+
+.row{
+  display: table;
+  border-collapse: separate;
+  border-spacing: 2px;
+}
