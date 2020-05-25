@@ -31,6 +31,8 @@ x = hello()
 print(x())
 """
 
+# func decorators
+
 def new_decorator(func):
 
     def wrap_func():
@@ -47,3 +49,20 @@ def func_needs_decorator():
 # @new_decorator => func_needs_decorator = new_decorator(func_needs_decorator)
 
 func_needs_decorator()
+
+# class decorators
+
+class decorator:
+    def __init__(self, f):
+        self.f = f
+    def __call__(self):
+        print(f"Decorating {self.f.__name__}")
+        self.f()
+
+
+@decorator
+def foo():
+    print("inside foo()")
+
+
+foo()
