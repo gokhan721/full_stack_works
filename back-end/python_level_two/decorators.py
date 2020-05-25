@@ -78,12 +78,11 @@ foo()
 def memoize(f):
     memo = {}
 
-    def helper(x):
-        print(f"x: {x}")
+    def fib_memo(x):
         if x not in memo:
             memo[x] = f(x)
         return memo[x]
-    return helper
+    return fib_memo
 
 
 @memoize
@@ -95,6 +94,7 @@ def fib(n):
     else:
         return fib(n - 1) + fib(n - 2)
 
+print(f"class name: {fib.__name__}")
 
 fib = fib(50)
 
