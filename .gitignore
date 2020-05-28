@@ -12,7 +12,6 @@ media
 # Python #
 *.py[cod]
 *$py.class
-__pycache__/
 
 # Installer logs
 pip-log.txt

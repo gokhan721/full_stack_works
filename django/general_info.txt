@@ -1,0 +1,13 @@
+- Free and open source web framework
+- map url to code
+- render html dynamically
+- front-end and back-end bridge
+- Create virtual environment while using django
+    - Conda can be used to create venv
+          - conda create --name "venv_name" django(package with start)
+          - activate or deactivate "venv_name"
+          - conda create --name <env_name> --file requirements.txt
+    - conda.io/docs
+
+
+- django-admin startproject "project_name"
