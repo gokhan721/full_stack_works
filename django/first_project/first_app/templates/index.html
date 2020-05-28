@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block head %}
+    <title>First App Page</title>
+    <link rel="stylesheet" href="{% static "css/mystyle.css" %}">
+{% endblock %}
+
+{% block index_content %}
+
+  <h1> {{ insert_me }}</h1>
+  <img src="{% static "images/django.png" %}" alt="Django img not showed">
+
+{% endblock %}
