@@ -2,8 +2,8 @@
 {% load static %}
 
 {% block head %}
-  <title>Blog Page Of App Two</title>
-  <link rel="stylesheet" href="{% static "css/apptwo_style.css" %}">
+<title>Blog Page Of App Two</title>
+<link rel="stylesheet" href="{% static "css/apptwo_style.css" %}">
 {% endblock %}
 
 {% block blog_content %}
@@ -11,25 +11,22 @@
 
 <div class="user_blog">
 
-  {% if user_blog %}
-  <table>
-    <thead>
-      <th>First_Name</th>
-      <th>Last_Name</th>
-      <th>Email</th>
-    </thead>
 
+  {% if user_blog %}
+  <ol>
     {% for user in user_blog %}
-    <tr>
-      <td>{{ user.first_name }}</td>
-      <td>{{ user.last_name }}</td>
-      <td>{{ user.email }}</td>
-    </tr>
+    <li>User Info</li>
+    <ul>
+      <li>First Name: {{ user.first_name }}</li>
+      <li>Last Name: {{ user.last_name }}</li>
+      <li>Email: {{ user.email }}</li>
+    </ul>
     {% endfor %}
-  </table>
+  </ol>
   {% else %}
   <p>NO USER FOUND FOR BLOG</p>
   {% endif %}
+
 
 </div>
 
