@@ -7,7 +7,25 @@
           - conda create --name "venv_name" django(package with start)
           - activate or deactivate "venv_name"
           - conda create --name <env_name> --file requirements.txt
+          - conda info --venvs
+
     - conda.io/docs
 
 
 - django-admin startproject "project_name"
+
+
+- python manage.py startapp "app_name"
+
+- python manage.py makemigrations "app_name"
+- python manage.py migrate
+
+- In order to use created models in django admin interface they should be registered
+
+    - from django.contrib import admin
+      from app.models import Model1
+      admin.site.register(Model1)
+
+- In order to use db needs create "superuser"
+
+    - python manage.py createsuperuser
