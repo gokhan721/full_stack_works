@@ -1,6 +1,36 @@
 {% extends "base.html" %}
-{% block blog_content %}
+{% load static %}
 
-  <h2><em>Blog Page</em></h2>
+{% block head %}
+  <title>Blog Page Of App Two</title>
+  <link rel="stylesheet" href="{% static "css/apptwo_style.css" %}">
+{% endblock %}
+
+{% block blog_content %}
+<h1><strong>Blog Page</strong></h1>
+
+<div class="user_blog">
+
+  {% if user_blog %}
+  <table>
+    <thead>
+      <th>First_Name</th>
+      <th>Last_Name</th>
+      <th>Email</th>
+    </thead>
+
+    {% for user in user_blog %}
+    <tr>
+      <td>{{ user.first_name }}</td>
+      <td>{{ user.last_name }}</td>
+      <td>{{ user.email }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+  {% else %}
+  <p>NO USER FOUND FOR BLOG</p>
+  {% endif %}
+
+</div>
 
 {% endblock %}

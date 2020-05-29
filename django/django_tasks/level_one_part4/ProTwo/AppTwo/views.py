@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from AppTwo.models import *
 
 # Create your views here.
 def index(request):
@@ -10,4 +11,6 @@ def help(request):
     return render(request, "help.html", context = help_dict)
 
 def blog(request):
-    return render(request, "blog.html")
+    users = User.objects.all().order_by("first_name")
+    user_dict = {"user_blog": users}
+    return render(request, "blog.html", context = user_dict)
