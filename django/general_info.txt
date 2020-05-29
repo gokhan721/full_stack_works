@@ -29,3 +29,5 @@
 - In order to use db needs create "superuser"
 
     - python manage.py createsuperuser
+
+- puplating dummy data with Faker python module    
