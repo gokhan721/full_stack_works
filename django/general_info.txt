@@ -30,4 +30,7 @@
 
     - python manage.py createsuperuser
 
-- puplating dummy data with Faker python module    
+- poplating dummy data with Faker python module
+
+
+- bcrypt and Argon2 to secure passwords(setting.py/PASSWORD_HASHES)
