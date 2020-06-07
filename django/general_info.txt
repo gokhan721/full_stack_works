@@ -34,3 +34,6 @@
 
 
 - bcrypt and Argon2 to secure passwords(setting.py/PASSWORD_HASHES)
+
+
+- pip install pillow (Python Image lib)
