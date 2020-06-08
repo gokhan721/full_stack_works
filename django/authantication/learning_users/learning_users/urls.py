@@ -17,8 +17,14 @@ from django.contrib import admin
 from django.urls import path, include
 from auth_app import views
 
+# For media static files
+from django.conf import settings
+from django.conf.urls.static import static
+
 urlpatterns = [
     path('', views.index, name="index"),
     path('auth_app/', include('auth_app.urls')),
     path('admin/', admin.site.urls),
-]
+    path('logout/', views.user_logout, name='logout'),
+    path('special/', views.special, name='special'),
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
