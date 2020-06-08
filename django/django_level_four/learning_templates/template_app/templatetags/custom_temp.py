@@ -1,6 +1,6 @@
 from django import template
 
-regist = template.Library()
+register = template.Library()
 
 @register.filter(name='cut')
 def cut(value, arg):
