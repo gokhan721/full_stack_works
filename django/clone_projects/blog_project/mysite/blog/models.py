@@ -24,7 +24,7 @@ class Post(models.Model):
 
 
         def get_absolute_url(self):
-            return reverse('post_detail', kwargs={'pk': self.pk})
+            return reverse('blog:post_detail', kwargs={'pk': self.pk})
 
 
         def __str__(self):
@@ -50,7 +50,7 @@ class Comment(models.Model):
 
 
     def get_absolute_url(self):
-        return reverse("post_list")
+        return reverse("blog:post_list")
 
 
     def __str__(self):
