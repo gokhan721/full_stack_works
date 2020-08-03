@@ -1,7 +1,7 @@
 from django.db import models
 from django.utils.text import slugify
 from django.contrib.auth import get_user_model
-from django import templates
+from django import template
 from django.urls import reverse
 
 import misaka  # markdown parse library
@@ -37,7 +37,7 @@ class GroupMember(models.Model):
     group = models.ForeignKey(
         Group,
         related_name='memberships',
-        on_delete=models.CASCADE, _
+        on_delete=models.CASCADE,
     )
     user = models.ForeignKey(
         User,
