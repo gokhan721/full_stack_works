@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from AppTwo.meta_forms import NewUserForm
-# from AppTwo.models import * => list users with fake pop
+from AppTwo.models import *
 
 # Create your views here.
 def index(request):
@@ -10,8 +10,6 @@ def index(request):
 def help(request):
     help_dict = {"help_page": "Welcome to the Help Page"}
     return render(request, "help.html", context = help_dict)
-'''
-=> list users with fake pop
 
 def blog(request):
     users = User.objects.all().order_by("first_name")
@@ -33,3 +31,4 @@ def blog(request):
             print("Erro form invalid")
 
     return render(request, "blog.html", context = {"form": form})
+'''
